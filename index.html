@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WonderPods</title>
     <style>
-        /* Add a background color to the top navigation */
+        /* Base styles remain unchanged */
         .topnav {
             background-color: #591D1D;
             overflow: hidden;
@@ -14,7 +14,6 @@
             position: sticky;
         }
 
-        /* Style the links inside the navigation bar */
         .topnav a {
             color: #f2f2f2;
             text-align: center;
@@ -23,13 +22,11 @@
             font-size: 36px;
         }
 
-        /* Change the color of links on hover */
         .topnav a:hover {
-            background-color: #D27F9B; /* Slightly darker hover color */
+            background-color: #D27F9B;
             color: black;
         }
 
-        /* Add a color to the active/current link */
         .topnav a.active {
             background-color: #A6769E;
             color: white;
@@ -71,7 +68,7 @@
 
         .spotlights {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 40px;
         }
@@ -96,16 +93,42 @@
             font-size: 1.1rem;
         }
 
-        /* Footer */
         footer {
             background-color: #591D1D;
             color: #f2f2f2;
-            text-align: center; 
+            text-align: center;
             padding: 2px;
             margin-top: 20px;
             font-size: 0.9rem;
         }
 
+        /* Mobile-Friendly Adjustments */
+        @media (max-width: 768px) {
+            body {
+                margin: 0 5%; /* Less margin for mobile screens */
+            }
+
+            .topnav a {
+                font-size: 24px; /* Smaller font size for links */
+                padding: 10px 12px; /* Adjust padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 1.5rem; /* Smaller heading for mobile */
+            }
+
+            .spotlight h3 {
+                font-size: 1rem; /* Reduce font size for smaller screens */
+            }
+
+            .spotlights {
+                grid-template-columns: 1fr; /* Single column for smaller screens */
+            }
+
+            footer h5 {
+                font-size: 0.8rem; /* Smaller footer text for mobile */
+            }
+        }
     </style>
 </head>
 <body>
