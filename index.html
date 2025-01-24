@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderPods</title>
+    <style>
+        /* Add a background color to the top navigation */
+        .topnav {
+            background-color: #591D1D;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 36px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #D27F9B; /* Slightly darker hover color */
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #A6769E;
+            color: white;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: #591D1D;
+            display: inline-block;
+            border-bottom: 2px solid #A6769E;
+            padding-bottom: 2px;
+            text-align: center;
+            font-family: cursive;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        p, ul {
+            text-align: left;
+        }
+
+        h2 {
+            font-family: serif;
+            margin-top: 2px;
+        }
+
+        .spotlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .spotlight {
+            background-color: #fff;
+            border: 2px solid #A6769E;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .spotlight img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 0px;
+        }
+
+        .spotlight h3 {
+            color: #591D1D;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #591D1D;
+            color: #f2f2f2;
+            text-align: center; 
+            padding: 2px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <img src="IsoImages/Isopod_logo.png" height="300" alt="Logo of WonderPods showing a cartoon isopod">
+    </div>
+
+    <header class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="isopods.html">Isopods</a>
+        <a href="expos.html">Expos</a>
+        <a href="contact.html">Contact</a>
+        <a href="care.html">Care</a>
+        <a href="about.html">About</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Welcome to WonderPods!</h1>
+            <p>Your ultimate resource for all things <strong>isopods</strong>!</p>
+            <p>
+                At WonderPods, we’re passionate about these fascinating creatures and everything that goes into their care. 
+                Whether you’re a seasoned isopod enthusiast or just getting started, you’ve come to the right place.
+            </p>
+            
+            <h2>Spotlight Isopods</h2>
+            <div class="spotlights">
+                <div class="spotlight">
+                    <img src="IsoImages/Lava group.jpeg" alt="Lava isopods">
+                    <h3>Porcellio scaber 'Lava'</h3>
+                    <p>Vibrant and fiery, these isopods bring a touch of the tropics to your terrarium!</p>
+                </div>
+                <div class="spotlight">
+                    <img src="IsoImages/Panda King group.jpeg" alt="Panda King isopods">
+                    <h3>Cubaris sp 'Panda King'</h3>
+                    <p>Adorable and distinctive, the Panda King is a fan-favorite among isopod enthusiasts.</p>
+                </div>
+                <div class="spotlight">
+                    <img src="IsoImages/Pineapple.jpeg" alt="Pineapple isopods">
+                    <h3>Cristarmadillidium muricatum 'Pineapple'</h3>
+                    <p>Sweet and spiky, these little ones are as charming as their namesake fruit.</p>
+                </div>
+            </div>
+
+            <h2>What You'll Find Here:</h2>
+            <ul>
+                <li><strong>Isopods:</strong> Dive into the diverse world of these incredible creatures and learn about the different species we love.</li>
+                <li><strong>Expos:</strong> Stay updated on upcoming events and expos to connect with the isopod community.</li>
+                <li><strong>Care:</strong> Get expert tips and advice on creating the perfect habitat and maintaining healthy isopods.</li>
+                <li><strong>About Us:</strong> Learn more about our journey and love for isopods.</li>
+                <li><strong>Contact:</strong> Reach out with your questions or just say hello!</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <h5> All isopod and springtail pictures by WonderPods. Please do not use without proper permission.</h5>
+    </footer>
+
+</body>
+</html>
