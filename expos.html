@@ -11,6 +11,7 @@
             overflow: hidden;
             display: flex;
             justify-content: center; /* Center links horizontally */
+            flex-wrap: wrap;
         }
 
         /* Style the links inside the navigation bar */
@@ -19,7 +20,8 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 36px;
+            font-size: 24px;
+            flex: 1 1 100%; /* Make links responsive */
         }
 
         /* Change the color of links on hover */
@@ -45,7 +47,7 @@
 
         body {
             background-color: #f2f2f2;
-            margin: 0 10%;
+            margin: 0 5%;
             font-family: sans-serif;
         }
 
@@ -54,23 +56,27 @@
             font-family: serif;
             text-transform: uppercase;
             margin-top: 30px;
+            font-size: 2.5rem;
         }
 
         h2 {
             font-family: serif;
             margin-top: 2px;
+            font-size: 1.5rem;
         }
 
         /* Style for the expo image link */
         .expo-image {
-            width: 500px;
+            max-width: 100%;
             height: auto;
+            margin-top: 20px;
         }
 
         /* Add spacing between sections */
         .spacer {
             margin: 20px 0;
         }
+
         footer {
             background-color: #591D1D;
             color: #f2f2f2;
@@ -79,12 +85,32 @@
             margin-top: 20px;
             font-size: 0.9rem;
         }
+
+        /* Make the header and footer more responsive */
+        @media (max-width: 600px) {
+            .topnav a {
+                font-size: 18px;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Logo Section -->
     <div class="center-container">
-        <img src="IsoImages/Isopod_logo.png" height="300" alt="Logo of WonderPods showing a cartoon isopod">
+        <img src="IsoImages/Isopod_logo.png" height="200" alt="Logo of WonderPods showing a cartoon isopod">
     </div>
 
     <!-- Navigation Bar -->
@@ -103,8 +129,7 @@
             <h2>Want to catch us at a reptile expo? <br>
                 Check out the following for our next shows!
             </h2>
-            <p></p>Next Expo: <strong>Feb 22, 2025</strong> in <strong>Missoula, MT</strong></p>
-
+            <p>Next Expo: <strong>Feb 22, 2025</strong> in <strong>Missoula, MT</strong></p>
         </div>
 
         <div class="center-container">
@@ -112,11 +137,10 @@
                 <img src="IsoImages/BSRE.png" class="expo-image" alt="clickable Big Sky Reptile Expo logo">
             </a>
         </div>
-
     </main>
 
     <footer>
-        <h5> All isopod and springtail pictures by WonderPods. Please do not use without proper permission.</h5>
+        <h5>All isopod and springtail pictures by WonderPods. Please do not use without proper permission.</h5>
     </footer>
 </body>
 </html>
