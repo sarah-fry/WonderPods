@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderPods - Expos</title>
+    <style>
+        .topnav {
+            background-color: #591D1D;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 36px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #F2BBDF;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #A6769E;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Mobile nav adjustments */
+        @media screen and (max-width: 768px) {
+            .topnav a {
+                display: none;
+            }
+
+            .topnav a.active,
+            .topnav a.icon {
+                display: block;
+            }
+
+            .topnav.responsive {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .topnav.responsive a {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 12px 20px;
+            }
+
+            .topnav.responsive a.icon {
+                align-self: flex-end;
+            }
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        .margin-text {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: serif;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-family: serif;
+            margin-top: 2px;
+        }
+
+        .expo-image {
+            width: 500px;
+            height: auto;
+        }
+
+        .spacer {
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #591D1D;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+    <div class="center-container">
+        <img src="IsoImages/Isopod_logo.png" height="300" alt="Logo of WonderPods showing a cartoon isopod">
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="topnav" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="isopods.html">Isopods</a>
+            <a href="geckos.html">Geckos</a>
+            <a class="active" href="expos.html">Expos</a>
+            <a href="contact.html">Contact</a>
+            <a href="care.html">Care</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+        <div class="center-container spacer">
+            <h2>Want to catch us at a reptile expo? <br>
+                Check out the following for our next shows!
+            </h2>
+            <p>Next Expo: <strong>Feb 22, 2025</strong> in <strong>Missoula, MT</strong></p>
+        </div>
+
+        <div class="center-container">
+            <a href="https://bigskyreptileexpo.com/" target="_blank" rel="noopener noreferrer">
+                <img src="IsoImages/BSRE.png" class="expo-image" alt="clickable Big Sky Reptile Expo logo">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <h5>All images created or taken by WonderPods. Please do not use without proper permission.</h5>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            nav.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

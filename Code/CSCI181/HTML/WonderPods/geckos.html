@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WonderPods - Geckos</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .topnav {
+      background-color: #591D1D;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 36px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #D27F9B;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #A6769E;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .topnav a {
+        display: none;
+      }
+
+      .topnav a.active,
+      .topnav a.icon {
+        display: block;
+      }
+
+      .topnav.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topnav.responsive a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 12px 20px;
+      }
+
+      .topnav.responsive a.icon {
+        align-self: flex-end;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+      footer h5 {
+        font-size: 0.8rem;
+      }
+    }
+
+    body main {
+      flex: 1;
+      text-align: center;
+      padding: 0 10%;
+    }
+
+    .center-container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #591D1D;
+      font-family: serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 30px;
+      border-bottom: 2px solid #A6769E;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      font-family: serif;
+      color: #591D1D;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      text-align: center;
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4%;
+        margin-bottom: 30px;
+    }
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        box-sizing: border-box;
+    }
+
+    .column img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 8px;
+        height: auto;
+    }
+
+    figure {
+        text-align: center;
+        margin: 0;
+    }
+
+    figcaption {
+        margin-top: 6px;
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+
+    footer {
+      background-color: #591D1D;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 2px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <img src="IsoImages/Isopod_logo.png" height="300" alt="Logo of WonderPods showing a cartoon isopod">
+  </div>
+
+  <header>
+    <div class="topnav" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="isopods.html">Isopods</a>
+      <a class="active" href="geckos.html">Geckos</a>
+      <a href="expos.html">Expos</a>
+      <a href="contact.html">Contact</a>
+      <a href="care.html">Care</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Crested Geckos</h1>
+    <p>
+      I'm just beginning my journey into breeding <strong>crested geckos</strong>, and currently focusing exclusively on this species.
+    </p>
+    <p>
+      My main focus is on producing colorful lines, particularly those with standout patterns such as <strong>Super Dalmatians</strong> and <strong>Ink Spots</strong>. These unique markings make every gecko special and stunning!
+    </p>
+
+    <!-- Available Section -->
+    <h2>🛍️ Available Geckos</h2>
+    <div class="row">
+        <div class="column">
+            <figure>
+              <img src="GeckoImages/Shortcake.jpeg" />
+              <figcaption>Available Male #1</figcaption>
+              <figcaption>Strawberry Blonde Lily White</figcaption>
+              <figcaption>~ 30 grams (almost RTB)</figcaption>
+              <figcaption>$150 OBO</figcaption>              
+            </figure>
+          </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/no image.jpg" />
+          <figcaption>Available Unsexed #1</figcaption>
+          <figcaption>Harlequin Partial Pinstripe Dalmatian</figcaption>
+          <figcaption>6 grams</figcaption>
+          <figcaption>$100 OBO</figcaption>              
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Darky.jpeg" />
+          <figcaption>Available Unsexed #2</figcaption>
+          <figcaption>Dark Base Phantom, Possible Empty Back</figcaption>
+          <figcaption>4 grams</figcaption>  
+          <figcaption>$120 OBO</figcaption>              
+        </figure>
+      </div>
+    </div>
+
+    <!-- Ready to Breed Males -->
+    <h2>♂️ Ready-to-Breed Males</h2>
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Strawberry.png" />
+          <figcaption>Strawberry</figcaption>
+          <figcaption>Confetti Ink Spot Super Dalmatian</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Ready to Breed Females -->
+    <h2>♀️ Ready-to-Breed Females</h2>
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Rhubarb.jpeg" />
+          <figcaption>Rhubarb</figcaption>
+          <figcaption>Red Base Tiger Dalmatian</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Cheesecake.jpeg" />
+          <figcaption>Raspberry Cheesecake</figcaption>
+          <figcaption>Mardi Gras Lily White</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Juvenile Males -->
+    <h2>🐣 Juvenile Males</h2>
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/no image.jpg" />
+            <figcaption>Juvenile Male #1</figcaption>
+            <figcaption>Peridot</figcaption>
+            <figcaption>Yellow Base Ink & Oil Spot Dalmatian</figcaption>
+          </figure>
+        </div>
+    </div>
+
+    <!-- Juvenile Females -->
+    <h2>🐣 Juvenile Females</h2>
+    <div class="row">
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/MBBread.jpeg" />
+          <figcaption>Juvenile Female #1</figcaption>
+          <figcaption>Moldy Banana Bread</figcaption>
+          <figcaption>Yellow Base Tiger Ink & Oil Spot Dalmatian</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/no image.jpg" />
+          <figcaption>Juvenile Female #2</figcaption>
+          <figcaption>Dragonfruit</figcaption>
+          <figcaption>Red Base Dalmatian with Portholes</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Opal.jpeg" />
+          <figcaption>Juvenile Female #3</figcaption>
+          <figcaption>Opal</figcaption>
+          <figcaption>Red Base Confetti Dalmatian</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="GeckoImages/Honeycomb.jpeg" />
+          <figcaption>Juvenile Female #3</figcaption>
+          <figcaption>Honeycomb</figcaption>
+          <figcaption>Yellow Base Ink, Oil, & Bullseye Dalmatian</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <br>
+  <br>
+
+  <footer>
+    <h5>All images created or taken by WonderPods. Please do not use without proper permission.</h5>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      var nav = document.getElementById("navbar");
+      nav.classList.toggle("responsive");
+    }
+  </script>
+</body>
+</html>

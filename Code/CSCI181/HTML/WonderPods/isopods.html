@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderPods - Isopods</title>
+    <style>
+        .topnav {
+            background-color: #591D1D;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 36px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #D27F9B;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #A6769E;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .topnav a {
+                display: none;
+            }
+
+            .topnav a.active,
+            .topnav a.icon {
+                display: block;
+            }
+
+            .topnav.responsive {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .topnav.responsive a {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 12px 20px;
+            }
+
+            .topnav.responsive a.icon {
+                align-self: flex-end;
+            }
+        }
+
+        h3 {
+            border-bottom: #591D1D 2px;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: cursive;
+            margin-top: 30px;
+            color: #591D1D;
+        }
+
+        h2 {
+            font-family: cursive;
+            margin-top: 2px;
+            color: #591D1D;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4%;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            box-sizing: border-box;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        figure {
+            text-align: center;
+            margin: 0;
+        }
+
+        figcaption {
+            margin-top: 2px;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #591D1D;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <img src="IsoImages/Isopod_logo.png" height="300" alt="Logo of WonderPods showing a cartoon isopod">
+    </div>
+
+    <header>
+        <div class="topnav" id="navbar">
+            <a href="index.html">Home</a>
+            <a class="active" href="isopods.html">Isopods</a>
+            <a href="geckos.html">Geckos</a>
+            <a href="expos.html">Expos</a>
+            <a href="contact.html">Contact</a>
+            <a href="care.html">Care</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </div>
+    </header>
+
+    <br>
+    
+    <h2 class="center-container"><a href="contact.html">Contact us here</a> for the most up-to-date availability!</h2>
+
+    <h1 class="center-container"> Armadillidium species</h1>
+    
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Badium.jpeg" height="200" />
+                <figcaption>A. badium 'Castledaccia'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Espanyoli.jpg" height="200" />
+                <figcaption>A. espanyoli 'Marbleized'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/High yellow Spot.jpg" height="200" />
+                <figcaption>A. gestroi 'High Yellow Spot'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Klugii.jpg" height="200" />
+                <figcaption>A. klugii 'Montenegro'</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Zebra.jpeg" height="200" />
+                <figcaption>A. maculatum 'Zebra'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/no image.jpg" height="200" />
+                <figcaption>A. peraccae</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Sandstone.jpg" height="200" />
+                <figcaption>A. scaberrimum 'Sandstone'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Magic Potion.jpeg" height="200" />
+                <figcaption>A. vulgare 'Magic Potion'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+        </div>
+    </div>    
+    
+    <h1 class="center-container"> Cubaris species</h1>
+    
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Cappuccino.jpeg" height="200" />
+                <figcaption>C. sp 'Cappuccino'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Silver Ghost.jpeg" height="200" />
+                <figcaption>C. sp 'Silver Ghost'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Citrus.jpeg" height="200" />
+                <figcaption>C. sp 'Citrus'</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Red Edge.jpeg" height="200" />
+                <figcaption>C. sp 'Japanese Red Edge'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Panda King.jpeg" height="200" />
+                <figcaption>C. sp 'Panda King'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Rubber Ducky.jpeg" height="200" />
+                <figcaption>C. sp 'Rubber Ducky'</figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+
+    <h1 class="center-container"> Porcellio species</h1>
+
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Dairy Cow.jpeg" height="200" />
+                <figcaption>P. laevis 'Dairy Cow'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/no image.jpg" height="200" />
+                <figcaption>P. laevis 'Milkback''</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Lava.jpeg" height="200" />
+                <figcaption>P. scaber 'Lava'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Orange Dalmatian.jpg" height="200" />
+                <figcaption>P. scaber 'Orange Dalmatian'</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Orins Calico.jpeg" height="200" />
+                <figcaption>P. scaber 'Orin's Calico'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Giant Orange.jpg" height="200" />
+                <figcaption>P. scaber 'Giant Orange'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Sevilla.jpg" height="200" />
+                <figcaption>P. sevilla</figcaption>
+            </figure>
+        </div>
+    </div>
+    
+    <h1 class="center-container"> Porcellionides species</h1>
+    
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Powder Orange.jpg" height="200" />
+                <figcaption>Porcellionides sp. 'Powder Orange'</figcaption>
+            </figure>
+        </div>
+    <div class="column">
+        <figure>
+            <img src="IsoImages/no image.jpg" height="200" />
+            <figcaption>Porcellionides sp. 'Powder Blue'</figcaption>
+        </figure>
+    </div>
+    <div class="column">
+        <figure>
+            <img src="IsoImages/no image.jpg" height="200" />
+            <figcaption>Porcellionides sp. 'Oreo Crumble'</figcaption>
+        </figure>
+    </div>
+    </div>
+
+
+    <h1 class="center-container"> Misc species</h1>
+
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Pineapple.jpeg" height="200" />
+                <figcaption>C. muricatum 'Pineapple'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Pied.jpg" height="200" />
+                <figcaption>C. convexus 'Ukraine Pied'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Soil.jpeg" height="200" />
+                <figcaption>Troglogillo sp 'Soil'</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <h1 class="center-container"> Dwarf species</h1>
+
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Dwarf White.jpeg" height="200" />
+                <figcaption>T. tomentosa 'Dwarf White'</figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="IsoImages/Dwarf Wild.jpg" height="200" />
+                <figcaption>V. parvus 'Wild Type'</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <h5>All images created or taken by WonderPods. Please do not use without proper permission.</h5>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            nav.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
